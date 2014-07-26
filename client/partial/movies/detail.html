@@ -7,7 +7,7 @@
 
 <dl class="dl-horizontal">
   <dt>Year</dt>
-  <dd>{{movie.year}}</dd>
+  <dd>{{(movie.year) || "Unknown"}}</dd>
 </dl>
 
 <a href="/movies/{{movie.id}}/edit" title="Edit movie" class="btn">

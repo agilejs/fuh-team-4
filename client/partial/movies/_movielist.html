@@ -14,7 +14,7 @@
             </td>
                         <td>
                 <a href="#" ng-href="/movies/{{movie.id}}">
-                    {{movie.year}}
+                    {{(movie.year) || "Unknown"}}
                 </a>
             </td>
         </tr>
