@@ -10,6 +10,7 @@ function WelcomeCtrl ($scope, moviesResponse) {
 
 function HeaderController($scope, $location)
 {
+    'use strict';
     $scope.isActive = function (viewLocation) {
         return viewLocation === $location.path();
     };
