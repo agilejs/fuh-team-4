@@ -36,7 +36,7 @@ function MoviesAddCtrl ($scope, $http, $location) {
     $scope.movie = {};
     $scope.save = function (movie) {
         if (movie.year.match(/^((19\d{2}|[2-9]\d{3})|unknown)$/i) == null) {
-            alert('Ungültige Jahreszahl!');
+            window.alert('Ungültige Jahreszahl!');
             return;
         }
         $http.post('/movies', movie)
