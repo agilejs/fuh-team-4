@@ -113,7 +113,7 @@ function ActorsAddCtrl ($scope, $http, $location) {
 
 function ActorDetailCtrl ($scope, $http, $location, actorsResponse) {
     'use strict';
-    $scope.movie = actorsResponse.data;
+    $scope.actor = actorsResponse.data;
 
     $scope['delete'] = function () {
         $http['delete']('/actors/' + $scope.actor.id).success(function (res) {
