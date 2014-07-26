@@ -2,7 +2,7 @@
 <html ng-app="MovieDatabase" ng-controller="AppCtrl">
 <head>
     <meta charset="utf-8">
-    <title ng-bind="title">Movie Database - FUH-4</title>
+    <title ng-bind="title">Movie DatabNNNase - FUH-4</title>
 
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/app.css">
@@ -10,16 +10,16 @@
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
-            <div class="container">
+            <div class="container" ng-controller="HeaderController">
                 <a class="brand" href="/">Movie Database</a>
-                <ul class="nav">
-                    <li class="active">
+                <ul class="nav navbar-nav">
+                    <li ng-class="{ active: isActive('/')}">
                         <a href="/">Home</a>
                     </li>
-                    <li>
+                    <li ng-class="{ active: isActive('/movies')}">
                         <a href="/movies">Movies</a>
                     </li>
-                    <li>
+                    <li ng-class="{ active: isActive('/actors')}">
                         <a href="/actors">Actors</a>
                     </li>
                 </ul>

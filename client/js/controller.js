@@ -8,6 +8,14 @@ function WelcomeCtrl ($scope, moviesResponse) {
     $scope.movies = moviesResponse.data;
 }
 
+function HeaderController($scope, $location)
+{
+    'use strict';
+    $scope.isActive = function (viewLocation) {
+        return viewLocation === $location.path();
+    };
+}
+
 function MoviesListCtrl ($scope, $location, moviesResponse) {
     'use strict';
     $scope.movies = moviesResponse.data;
