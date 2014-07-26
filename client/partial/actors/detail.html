@@ -1,0 +1,14 @@
+<h2>{{actor.name}}</h2>
+
+<dl class="dl-horizontal">
+  <dt>Bio</dt>
+  <dd>{{actor.bio}}</dd>
+</dl>
+
+<a href="/actors/{{actor.id}}/edit" title="Edit actor" class="btn">
+    Edit
+</a>
+
+<button ng-click="delete()" title="Delete actor" class="btn btn-danger">
+    Delete
+</button>

@@ -1,0 +1,16 @@
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th><a href="" ng-click="predicate = 'name'; reverse=!reverse">Name</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="actor in actors | orderBy:predicate:reverse">
+            <td>
+                <a href="#" ng-href="/actors/{{actor.id}}">
+                    {{actor.name}}
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
